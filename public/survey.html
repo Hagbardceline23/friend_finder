@@ -189,4 +189,28 @@
                 </section>
                 <button type="submit" class="btn btn-primary submit">Submit</button>
                 
-                
+                <script type="text/javascript">
+$('.submit').on('click',function(event){
+    event.preventDefault();
+    var userInput = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        questionScores: [
+        $('#questionOne').val().trim(),
+        $('#questionTwo').val().trim(),
+        $('#questionThree').val().trim(),
+        $('#questionFour').val().trim(),
+        $('#questionFive').val().trim(),
+        $('#questionSix').val().trim(),
+        $('#questionSeven').val().trim(),
+        $('#questionEight').val().trim(),
+        $('#questionNine').val().trim(),
+        $('#questionTen').val().trim(),
+    ]
+      };  
+      console.log(userInput);
+        $.post('/app/data/friends.js', userInput)
+        
+    
+    
+};

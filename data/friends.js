@@ -1,7 +1,7 @@
 var friendList = [
   {
     name: 'Robert Prince',
-    profilePic: slkdfhlijldfs,
+    profilePic: 'slkdfhlijldfs',
     scores: [
       "4",
       "5",
