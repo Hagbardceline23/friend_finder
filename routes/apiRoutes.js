@@ -38,5 +38,6 @@ module.exports = function(app){
 
     //pushes new submission into the friendsList array
     friendList.push(req.body);
+    console.log(friendList)
   });
 };
